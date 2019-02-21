@@ -4,63 +4,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Josefin+Sans" rel="stylesheet">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Caveat|Josefin+Sans" rel="stylesheet"> -->
     <title>Ron's Crystal Collector Game</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand" href="#">Ron Seide</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </nav>
         </header>
-
         <div class="row">
             <div class="col">
                 <h1>Crystal Collector</h1>
+                <p>Play the Crystal Collector game! When you click the Start button, the computer will choose a random number for you to target and assign value for each of our four "crystals: actor and comedian Billy Crystal, country singer Crystal Gaye, idiot commentator Bill Crystal and classmate Crystal Roper. Collect crystals to add to your tally. When your tally matches the target! But be carful: if your tally goes over the target the computer wins! To play again, just click the Start button.  </p>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <p><button id="start">Start Game</button></p>
-                <div id="minerals">
-                    <button class="btn btn-default" id="crystal"><img src="assets/images/crystal.jpg" width="100px"
-                            height="100px"></button>
-                    <button class="btn btn-default" id="gayle"><img src="assets/images/gayle.jpg" width="100px"
-                            height="100px"></button>
-                    <button class="btn btn-default" id="kristol"><img src="assets/images/kristol.jpg" width="100px"
-                            height="100px"></button>
-                    <button class="btn btn-default" id="roper"><img src="assets/images/roper.png" width="100px"
-                            height="100px"></button>
-                </div>
+            <div class="col-lg-8">
+                <p><button class="btn btn-secondary" id="start">Start</button></p>
+                <button class="btn btn-default" id="crystal"><img src="assets/images/crystal.jpg" width="100px" height="100px"></button>
+                <button class="btn btn-default" id="gayle"><img src="assets/images/gayle.jpg" width="100px" height="100px"></button>
+                <button class="btn btn-default" id="kristol"><img src="assets/images/kristol.jpg" width="100px" height="100px"></button>
+                <button class="btn btn-default" id="roper"><img src="assets/images/roper.png" width="100px"height="100px"></button>
                 <div id="target"></div>
                 <div id="tally"></div>
                 <div id="status"></div>
             </div>
-            <div class="col">
+            <div class="col-lg-4">
                 <div id="computerScore"></div>
                 <div id="userScore"></div>
             </div>
-
         </div>
-        <div class="push"></div>
         <footer class="fixed-bottom">
-            <p>Copyright &copy;</p>
+            <p>Copyright &copy; 2019</p>
         </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
